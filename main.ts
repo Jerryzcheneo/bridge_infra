@@ -10,13 +10,13 @@ bluetooth.onBluetoothDisconnected(function () {
 })
 let temp42 = 0
 let temp32 = 0
-let no_of_person2 = 0
 let temp22 = 0
 let temp5 = 0
 let start_sending2 = 0
 basic.showString("S")
 basic.pause(200)
 bluetooth.startUartService()
+let no_of_person2 = 0
 start_sending2 = 0
 basic.forever(function () {
     temp5 = pins.analogReadPin(AnalogPin.P0)
@@ -28,9 +28,6 @@ basic.forever(function () {
         if (temp22 - temp5 > 0) {
             no_of_person2 += -1
         }
-    }
-    if (no_of_person2 > 9) {
-        no_of_person2 = 9
     }
     if (no_of_person2 < 0) {
         no_of_person2 = 0
@@ -50,9 +47,6 @@ basic.forever(function () {
         if (temp42 - temp32 > 0) {
             no_of_person2 += -1
         }
-    }
-    if (no_of_person2 > 9) {
-        no_of_person2 = 9
     }
     if (no_of_person2 < 0) {
         no_of_person2 = 0
