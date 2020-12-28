@@ -1,5 +1,6 @@
 {
     "name": "bridge_infra",
+    "version": "0.0.1",
     "description": "",
     "dependencies": {
         "core": "*",
