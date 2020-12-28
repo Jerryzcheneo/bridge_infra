@@ -1,0 +1,22 @@
+{
+    "name": "bridge_infra",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "microphone": "*",
+        "bridge_Ultra": "github:jerryzcheneo/bridge_ultra#v0.0.5",
+        "bluetooth": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "blocksprj"
+}
